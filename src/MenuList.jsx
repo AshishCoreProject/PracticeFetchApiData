@@ -10,8 +10,8 @@ import {
 function MenuList({ foodItem, foodImg }) {
   return (
     <>
-      <div className="p-2">
-        <Card sx={{ maxWidth: 345 }}>
+      <div className="p-2 px-4">
+        <Card sx={{ maxWidth: 345, padding: "8px" }}>
           <CardActionArea>
             <CardMedia
               component="img"

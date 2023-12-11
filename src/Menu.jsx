@@ -6,7 +6,7 @@ import EmptyMenu from "./EmptyMenu";
 import { useMenu } from "./useMenu";
 
 const MenuDiv = styled.div`
-  padding: 30px 0;
+  padding: 30px 10px;
   display: flex;
   place-items: center;
   flex-wrap: wrap;
