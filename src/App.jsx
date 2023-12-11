@@ -32,7 +32,9 @@ function App() {
   return (
     <>
       <div className="flex flex-col text-center text-sky-950">
-        <h1 className="text-5xl">Fetching Menus</h1>
+        <h2 className="p-5 text-3xl sm:underline sm:text-5xl">
+          Fetching Menus
+        </h2>
         <Box
           sx={{
             margin: "10px auto",
@@ -69,7 +71,7 @@ function App() {
               id="menu"
               onChange={(e) => setInput(e.target.value)}
               value={input}
-              className="block sm:w-[460px] w-full rounded-md border-0 py-1.5 pl-8 pr-20 text-gray-900 ring-1 ring-inset ring-cyan-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-400 sm:text-sm sm:leading-6 shadow-xl focus:border-cyan-400 focus:outline-none"
+              className="block sm:w-[460px] w-full rounded-md border-0 py-1.5 pl-10 pr-20 text-gray-900 ring-1 ring-inset ring-cyan-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-400 sm:text-sm sm:leading-6 shadow-xl focus:border-cyan-400 focus:outline-none"
               placeholder="eg. pizza, chicken"
             />
           </label>
