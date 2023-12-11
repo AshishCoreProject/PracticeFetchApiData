@@ -1,6 +1,11 @@
 import { Box } from "@mui/material";
 import Menu from "./Menu";
 import { useState } from "react";
+import styled from "styled-components";
+
+const Input = styled.input`
+  /* width: 560px; */
+`;
 
 function App() {
   const [input, setInput] = useState("");
@@ -26,11 +31,10 @@ function App() {
 
   return (
     <>
-      <div className="text-center text-sky-950">
+      <div className="flex flex-col text-center text-sky-950">
         <h1 className="text-5xl">Fetching Menus</h1>
         <Box
           sx={{
-            width: "400px",
             margin: "10px auto",
           }}
         >
@@ -59,13 +63,13 @@ function App() {
               </svg>
             </span>
 
-            <input
+            <Input
               type="text"
               name="search"
               id="menu"
               onChange={(e) => setInput(e.target.value)}
               value={input}
-              className="block w-full rounded-md border-0 py-1.5 pl-8 pr-20 text-gray-900 ring-1 ring-inset ring-cyan-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-400 sm:text-sm sm:leading-6 shadow-xl focus:border-cyan-400 focus:outline-none"
+              className="block sm:w-[460px] w-full rounded-md border-0 py-1.5 pl-8 pr-20 text-gray-900 ring-1 ring-inset ring-cyan-400 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-400 sm:text-sm sm:leading-6 shadow-xl focus:border-cyan-400 focus:outline-none"
               placeholder="eg. pizza, chicken"
             />
           </label>
